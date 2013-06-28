@@ -1,0 +1,36 @@
+Summer 2013
+
+["#69D2E7", "#A7DBD8", "#E0E4CC", "#FA6900"], //http://www.colourlovers.com/palette/92095/Giant_Goldfish
+["#3FB8AF", "#DAD8A7", "#FF9E9D", "#FF3D7F"], //http://www.colourlovers.com/palette/932683/Compatible
+["#FFE545", "#026475", "#C2A34F", "#FBB829"], //http://www.colourlovers.com/palette/819412/Here_Comes_the_Sun
+["#59A80F", "#C4ED68", "#E2FF9E", "#F0F2DD"], //http://www.colourlovers.com/palette/497335/Limeade_on_Ice
+
+
+Spring 2013
+
+["#5C323E", "#A82743", "#C0D23E", "#E5F04C"], //http://www.colourlovers.com/palette/1015109/All_Eyes_On_You
+["#FF003C", "#FF8A00", "#88C100", "#00C176"], //http://www.colourlovers.com/palette/56122/Sweet_Lolly
+["#234D20", "#77AB59", "#C9DF8A", "#F0F7DA"], //http://www.colourlovers.com/palette/385992/Spring_Wedding
+["#4D1137", "#705065", "#9FB3B2", "#F7F5E0"], //http://www.colourlovers.com/palette/1419827/Drops_of_Spring
+
+
+Winter 2012
+
+["#635353", "#A29494", "#C2C5CE", "#FEF7FE"], //http://www.colourlovers.com/palette/2244237/willows_winter
+["#65727A", "#8F9A9C", "#D7DACF", "#E6E8E3"], //http://www.colourlovers.com/palette/2236415/Winter
+["#8BA6AC", "#BDCDD0", "#E5E6C9", "#F8F8EC"], //http://www.colourlovers.com/palette/1890/fall_ingto_winter
+["#ADD8C7", "#E3F6F3", "#F4F7F7", "#FAF0FE"], //http://www.colourlovers.com/palette/605421/Crystal_Ice_Palace
+
+Autumn 2012
+
+["#4E2E1E", "#EA4F6C", "#F99548", "#FCCA55"], //http://www.colourlovers.com/palette/1483942/The_Autumn_Queen_HPP
+["#6D2243", "#EC5E0C", "#F78F1E", "#85871A"], //http://www.colourlovers.com/palette/1297074/Autumn_Rainbow
+["#A7321C", "#FFDC68", "#928941", "#352504"], //http://www.colourlovers.com/palette/36998/french_roast
+["#821F29", "#F6E03F", "#ADBD06", "#D46600"], //http://www.colourlovers.com/palette/582235/October_Roads
+
+summer 2012
+
+["#00A0B0", "#CC333F", "#EB6841", "#EDC951"], //http://www.colourlovers.com/palette/1473/Ocean_Five
+["#01b0f0", "#97d7f4", "#ff358b", "#ff9dc7"], //http://www.colourlovers.com/palette/9284/Summer_Watermelon s
+["#F1396D", "#F3FFEB", "#ACC95F", "#8F9924"], //http://www.colourlovers.com/palette/588/berry_summer
+["#B31237", "#FF8826", "#FFB914", "#2C9FA3"], //http://www.colourlovers.com/palette/424489/summer_of_85 x
