@@ -2,7 +2,7 @@
  
 size(600,200);
 smooth();
-background(#9F9169);
+background(0);
 noFill();
 
 // the first curve
