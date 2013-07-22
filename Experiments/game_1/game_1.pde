@@ -23,7 +23,7 @@ class Ball
 }
 Maxim maxim;
 
-int score;
+int score,sum;
 int count;
 int level;
 PImage star;
@@ -37,7 +37,7 @@ AudioPlayer over;
 AudioPlayer back;
 float over1;
 void setup()
-{ 
+{ sum=0;
   size(800, 600);//remove if on android mode
   smooth();
   ellipseMode(RADIUS);
@@ -149,8 +149,8 @@ Ball generate_ball()
 
 
 void mousePressed()
-{
-  if (mouseEvent.getClickCount()==2) {
+{sum++;
+  if (sum>2) {
   back.stop();
   setup();}
 }
