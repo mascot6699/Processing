@@ -26,17 +26,14 @@ Maxim maxim;
 int score, sum;
 int count, cheat;
 int level;
-PImage star, hrt;
+PImage star, hrt , back1 , back2;
 PImage [] starimages;
+Slider vol;
 int in_play;
 boolean captured;
 Ball[] enemys;
 Ball star1;
-AudioPlayer player;
-AudioPlayer eat;
-AudioPlayer over;
-AudioPlayer back;
-AudioPlayer buzz;
+AudioPlayer player , eat, over , back , buzz, life;
 float over1;
 void setup()
 { 
@@ -60,6 +57,8 @@ void setup()
   enemys[5] = generate_ball();
   star = loadImage("white-star-th.png");
   hrt = loadImage("heart.png");
+  back1 = loadImage("b1.jpg");
+  back2 = loadImage("b2.jpg");
   starimages = loadImages("sc-gellostars", ".png", 5);
   frameRate(60);
   maxim = new Maxim(this);
@@ -68,6 +67,9 @@ void setup()
   eat = maxim.loadFile("chime.wav");
   eat.setLooping(false);
   eat.volume(1);
+  life = maxim.loadFile("gainlife.wav");
+  life.setLooping(false);
+  life.volume(1);
   buzz = maxim.loadFile("buzzer.wav");
   buzz.setLooping(false);
   buzz.volume(1.4);
@@ -75,22 +77,32 @@ void setup()
   over.setLooping(false);
   back = maxim.loadFile("background.wav");
   back.setLooping(true);
-  back.volume(0.75);
+  vol = new Slider("vol", 0.75, 0, 1, 20, 10, 200, 20, HORIZONTAL);
 }
 
 void draw()
 { 
   if (in_play>0)
-  { 
+  {
     back.speed(0.4+level*0.04);
     back.play();
-    background(0);
+    imageMode(CORNER);
+    if(level%2==0)
+    image(back1,0,0);
+    else
+    image(back2,0,0);
+    vol.display();
+    back.volume(vol.get());
     fill(#77AB59);
     strokeWeight(1);
     line(0, 35, width, 35);
     noStroke();
-    noCursor();//remove if in android mode 
-    ellipse(mouseX, mouseY, 15, 15);
+    //remove if in android mode 
+    if(mouseY>35){
+    noCursor();
+    ellipse(mouseX, mouseY, 15, 15);}
+    else cursor();
+    
     count++;
     imageMode(CENTER);
     pushMatrix();
@@ -112,6 +124,8 @@ void draw()
       image(hrt, width/2, height/2, 40, 40);
       if (dist(mouseX, mouseY, width/2, height/2)<25) {
         captured = true;
+        life.cue(0);
+        life.play();
         in_play++;
       }
       
@@ -153,10 +167,10 @@ void draw()
     }
     textSize(20);
     fill(#9FB3B2);
-    text("Score : " + score, 200, 30);
-    text("Level : " + level, 400, 30);
-    image(hrt, (width/2+200), 20, 25, 25);
-    text(" X " + in_play, width/2+250, 30);
+    text("Score : " + score, 300, 30);
+    text("Level : " + level, 500, 30);
+    image(hrt, (width - 120), 20, 25, 25);
+    text(" X " + in_play, width-100, 30);
   }
   else
   { 
@@ -187,12 +201,13 @@ Ball generate_ball()
 
 
 void mousePressed()
-{
-  sum++;
+{ 
+  if (mouseY>80){
+    sum++;
   if (sum>2) {
     back.stop();
     setup();
-  }
+  }}
 }
 
 void keyPressed() {
@@ -203,4 +218,11 @@ void keyPressed() {
       cheat++;
   }
 }
+
+void mouseReleased(){
+  vol.mouseReleased();
+  
+}
+
+
 
