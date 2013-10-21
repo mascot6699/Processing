@@ -11,7 +11,8 @@ void setup(){
 }
 void draw(){
 if(frameCount % 60 ==0){
-buildplant();}
+//buildplant();
+}
 }
 
 
